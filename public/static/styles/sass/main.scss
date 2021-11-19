@@ -1,0 +1,125 @@
+@import "utils";
+
+$popup_width: 590px;
+$popup_height: 290px;
+$marine: #196960;
+
+html {
+  width: $popup_width;
+  height: $popup_height;
+  overflow: hidden;
+}
+
+body {
+  margin: 0;
+  position: relative;
+  min-height: $popup_height;
+  color: #363636;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  width: $popup_width;
+  overflow: hidden;
+
+  .header {
+    box-shadow: -1px 3px 4px 0px rgba(0, 0, 0, 0.17);
+    background: #ededed;
+
+    .credit_cards_list {
+      display: flex;
+      justify-content: space-around;
+      flex-direction: row;
+      align-items: stretch;
+
+      .link_element {
+        width: calc(100% / 3);
+        box-sizing: border-box;
+        text-align: center;
+        padding: 10px 0;
+        text-decoration: none;
+        cursor: pointer;
+        color: inherit;
+        font-weight: 400;
+        //border-right: 1px solid;
+        font-size: 15px;
+        position: relative;
+        overflow: hidden;
+
+        &:last-of-type {
+          //border-right: 0;
+        }
+
+        &.active {
+          &:after {
+            content: '';
+            position: absolute;
+            top: 100%;
+            transform: translate(-50%, -50%);
+            left: 50%;
+            width: 35px;
+            height: 12px;
+            border-radius: 35px;
+            background: rgba(0,0,0,0.3);
+          }
+        }
+      }
+    }
+  }
+
+  .content_wrapper {
+    padding: 30px;
+  }
+
+
+  .footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 11px 20px;
+    text-align: right;
+    box-sizing: border-box;
+    background: #363636;
+    color: white;
+    font-size: 13px;
+
+    a {
+      color: inherit;
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    img {
+      vertical-align: middle;
+      max-height: 20px;
+      margin-left: 10px;
+    }
+  }
+
+
+  .content_wrapper {
+    h3 {
+      margin: 0;
+      margin-bottom: 20px;
+    }
+
+    .card_details {
+      margin-top: 15px;
+    }
+
+    .detail_element {
+      border-bottom: 1px solid;
+      padding: 6px 0;
+
+      .label {
+        margin-right: 7px;
+        font-weight: 500;
+      }
+
+      .copy_value {
+        float: right;
+        i {
+          color: $marine;
+        }
+      }
+    }
+  }
+}

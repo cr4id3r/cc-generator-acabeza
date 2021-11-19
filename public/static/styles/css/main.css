@@ -1,0 +1,128 @@
+/* line 1, ../sass/_utils.scss */
+.mini_top_message {
+  position: absolute;
+  right: 0;
+  transform: translate(120%, -50%);
+  top: 50%;
+  padding: 14px 40px;
+  background: white;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
+  border-radius: 10px 0 0 10px;
+  transition: all .5s;
+}
+/* line 12, ../sass/_utils.scss */
+.mini_top_message.show {
+  transform: translate(0%, -50%);
+}
+
+/* line 7, ../sass/main.scss */
+html {
+  width: 590px;
+  height: 290px;
+  overflow: hidden;
+}
+
+/* line 13, ../sass/main.scss */
+body {
+  margin: 0;
+  position: relative;
+  min-height: 290px;
+  color: #363636;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  width: 590px;
+  overflow: hidden;
+}
+/* line 23, ../sass/main.scss */
+body .header {
+  box-shadow: -1px 3px 4px 0px rgba(0, 0, 0, 0.17);
+  background: #ededed;
+}
+/* line 27, ../sass/main.scss */
+body .header .credit_cards_list {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  align-items: stretch;
+}
+/* line 33, ../sass/main.scss */
+body .header .credit_cards_list .link_element {
+  width: calc(100% / 3);
+  box-sizing: border-box;
+  text-align: center;
+  padding: 10px 0;
+  text-decoration: none;
+  cursor: pointer;
+  color: inherit;
+  font-weight: 400;
+  font-size: 15px;
+  position: relative;
+  overflow: hidden;
+}
+/* line 52, ../sass/main.scss */
+body .header .credit_cards_list .link_element.active:after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  width: 35px;
+  height: 12px;
+  border-radius: 35px;
+  background: rgba(0, 0, 0, 0.3);
+}
+/* line 68, ../sass/main.scss */
+body .content_wrapper {
+  padding: 30px;
+}
+/* line 73, ../sass/main.scss */
+body .footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 11px 20px;
+  text-align: right;
+  box-sizing: border-box;
+  background: #363636;
+  color: white;
+  font-size: 13px;
+}
+/* line 84, ../sass/main.scss */
+body .footer a {
+  color: inherit;
+  font-weight: 700;
+  text-decoration: none;
+}
+/* line 90, ../sass/main.scss */
+body .footer img {
+  vertical-align: middle;
+  max-height: 20px;
+  margin-left: 10px;
+}
+/* line 99, ../sass/main.scss */
+body .content_wrapper h3 {
+  margin: 0;
+  margin-bottom: 20px;
+}
+/* line 104, ../sass/main.scss */
+body .content_wrapper .card_details {
+  margin-top: 15px;
+}
+/* line 108, ../sass/main.scss */
+body .content_wrapper .detail_element {
+  border-bottom: 1px solid;
+  padding: 6px 0;
+}
+/* line 112, ../sass/main.scss */
+body .content_wrapper .detail_element .label {
+  margin-right: 7px;
+  font-weight: 500;
+}
+/* line 117, ../sass/main.scss */
+body .content_wrapper .detail_element .copy_value {
+  float: right;
+}
+/* line 119, ../sass/main.scss */
+body .content_wrapper .detail_element .copy_value i {
+  color: #196960;
+}
