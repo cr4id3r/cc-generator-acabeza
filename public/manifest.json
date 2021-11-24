@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
 
-  "name": "CC Generator",
+  "name": "Credit Card Generator",
   "description": "This extension generate test credit cards",
   "version": "1",
 
