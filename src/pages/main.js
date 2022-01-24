@@ -1,19 +1,19 @@
 import {Header} from "../components/header";
 import {Footer} from "../components/footer";
 import {Route, BrowserRouter as Router, Switch} from "react-router-dom";
-import {PageNotFound} from "./404";
+// import {PageNotFound} from "./404";
 import {VisaComponent} from "./cards/visa";
 import {MasterCardComponent} from "./cards/mastercard";
 import {AXComponent} from "./cards/ax";
 
 
-function WelcomeMessage() {
-    return (
-        <div>
-             Bienvenido a CC Generator
-        </div>
-    )
-}
+// function WelcomeMessage() {
+//     return (
+//         <div>
+//              Bienvenido a CC Generator
+//         </div>
+//     )
+// }
 
 
 export default function CCGeneratorApp() {

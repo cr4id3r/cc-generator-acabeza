@@ -7,7 +7,7 @@ const MenuItem = ({target_path, actual_path, label, handle_change}) => {
     }
 
     return (
-        <Link to={target_path} className={`link_element ${target_path == actual_path ? 'active': ''}`}
+        <Link to={target_path} className={`link_element ${target_path === actual_path ? 'active': ''}`}
               onClick={() => clicked_menu_element(target_path)}>
             {label}
         </Link>
